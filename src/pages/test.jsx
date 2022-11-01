@@ -54,7 +54,7 @@ const Test = () => {
                         </div>
                         <div className="flex flex-col justify-center items-center md:px-40">
                             <div className="flex justify-center mt-5">
-                                <img src='https://st.depositphotos.com/1345122/3678/i/600/depositphotos_36784709-stock-photo-business-woman.jpg' alt="photo" />
+                                <img src='https://papik.pro/uploads/posts/2021-12/thumbs/1639280833_9-papik-pro-p-menedzher-klipart-9.jpg' alt="photo" />
                             </div>
                             <div className="flex px-3">
                                 <p className='font-mono text-lg font-medium tracking-wide'>1. В какой паре чисел первое число является делителем второго?</p>
