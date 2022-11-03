@@ -7,6 +7,7 @@ import PageSubject from "./pages/PageSubject";
 import ShortCource from "./pages/shortCourse";
 import Tests from "./pages/tests";
 import Test from "./pages/test";
+import FinishTest from "./pages/finishTest";
 
 
 const App = (props) => {
@@ -25,6 +26,7 @@ const App = (props) => {
         <Route path="/shortCource" element={<ShortCource />} />
         <Route path="/tests" element={<Tests />} />
         <Route path="/Test" element={<Test />} />
+        <Route path="/finishTest" element={<FinishTest />} />
       </Routes>
     </div>
   );

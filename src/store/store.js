@@ -4,7 +4,11 @@ const initialState = {
         name: '',
         class: '',
     },
-    db: ''
+    db: '',
+    finishTest: {
+        questions: 0,
+        isTrue: 0,
+    }
 }
 
 const reducer = (state = initialState, action) => {
@@ -17,12 +21,17 @@ const reducer = (state = initialState, action) => {
                     class: action.payload.class,
                 }
             };
-            case 'DB':
+        case 'DB':
             return {
                 ...state,
                 db: action.payload
             };
-      
+        case 'FINISHTEST':
+            return {
+                ...state,
+                finishTest: action.payload
+            };
+
         default:
             return state;
     }
