@@ -29,9 +29,10 @@ const FinishTest = () => {
                     top: 0,
                     left: 0,
                     width: '100%',
-                    height: '30%',
+                    height: '100%',
                     position: 'fixed',
-                    background: '#fff'
+                    background: '#fff',
+                    opacity: 0.4
                 }}
             />
             </div>
