@@ -38,8 +38,9 @@ const Tests = () => {
                             </div>
                             <h2 className="font-serif text-xl lg:text-3xl font-black mt-5 text-emerald-500">Темы</h2>
                             <div className="flex flex-col px-3">
-                                <Link  className="font-medium text-lg text-cyan-500" to='/test'>Тест 1. Делимость натуральных чисел (24 вопроса).</Link>
-                                <Link  className="font-medium text-lg text-cyan-500" to='/test'>Тест 2. Делимость натуральных чисел (24 вопроса).</Link>
+                                {/* <Link  className="font-medium text-lg text-cyan-500" to='/test'>Тест 1. Делимость натуральных чисел (24 вопроса).</Link>
+                                <Link  className="font-medium text-lg text-cyan-500" to='/test'>Тест 2. Делимость натуральных чисел (24 вопроса).</Link> */}
+                                Здесь пока ничего нет
                             </div>
                         </div>
                     </>

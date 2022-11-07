@@ -8,6 +8,8 @@ import ShortCource from "./pages/shortCourse";
 import Tests from "./pages/tests";
 import Test from "./pages/test";
 import FinishTest from "./pages/finishTest";
+import ProfTest from "./pages/profTest";
+import FinishProfTest from "./pages/finishProfTest";
 
 
 const App = (props) => {
@@ -27,6 +29,8 @@ const App = (props) => {
         <Route path="/tests" element={<Tests />} />
         <Route path="/Test" element={<Test />} />
         <Route path="/finishTest" element={<FinishTest />} />
+        <Route path="/profTest" element={<ProfTest />} />
+        <Route path="/finishProfTest" element={<FinishProfTest />} />
       </Routes>
     </div>
   );

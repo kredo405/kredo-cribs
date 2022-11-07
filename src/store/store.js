@@ -8,7 +8,8 @@ const initialState = {
     finishTest: {
         questions: 0,
         isTrue: 0,
-    }
+    },
+    profTest: ['']
 }
 
 const reducer = (state = initialState, action) => {
@@ -31,6 +32,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 finishTest: action.payload
             };
+        case 'PROFTEST':
+            return {
+                ...state,
+                profTest: action.payload
+            };    
 
         default:
             return state;

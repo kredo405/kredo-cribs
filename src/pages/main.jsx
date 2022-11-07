@@ -18,8 +18,27 @@ const Main = () => {
     const [subjectShow, setSubjectShow] = useState(false)
 
     const onSelect = (value) => {
+        console.log(value)
         setHowClass(value)
         setSubjectShow(true)
+    }
+
+    let subjects;
+
+    if (+howClass < 5) {
+        subjects = <>
+            <Subject name='Русский язык' howClass={howClass} img={russia} />
+            <Subject name='Математика' howClass={howClass} img={math} />
+        </>
+    }
+    if (+howClass >= 5) {
+        subjects = <>
+            <Subject name='Математика' howClass={howClass} img={math} />
+            <Subject name='Физика' howClass={howClass} img={radium} />
+            <Subject name='Химия' howClass={howClass} img={flask} />
+            <Subject name='Русский язык' howClass={howClass} img={russia} />
+            <Subject name='Английский язык' howClass={howClass} img={uk} />
+        </>
     }
 
     return (
@@ -75,11 +94,7 @@ const Main = () => {
             <div>
                 {subjectShow ?
                     <div className='mt-5'>
-                        <Subject name='Математика' howClass={howClass} img={math} />
-                        <Subject name='Физика' howClass={howClass} img={radium} />
-                        <Subject name='Химия' howClass={howClass} img={flask} />
-                        <Subject name='Русский язык' howClass={howClass} img={russia} />
-                        <Subject name='Английский язык' howClass={howClass} img={uk} />
+                        {subjects}
                     </div>
                     :
                     null}

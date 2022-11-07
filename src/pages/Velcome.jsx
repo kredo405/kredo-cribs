@@ -9,7 +9,7 @@ const Velcome = () => {
             <div className="flex flex-col lg:flex-row lg:justify-around">
                 <div className="flex justify-center">
                     <img
-                        className="object-cover"
+                        className="h-60 lg:h-90"
                         src={main}
                         alt="fon"
                     />
@@ -22,9 +22,17 @@ const Velcome = () => {
                         </h1>
                         <p className="mt-3 font-mono text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 px-3">
                             Сложности с школьной программой? А домашних заданий с каждым днем всё больше…
-                            Если это так, то шпаргалки и онлайн-тренажеры станут для вас отличным помощником. Школьные предметы разделены на отдельные темы.
+                            Если это так, то шпаргалки и онлайн-тренажеры станут для вас отличным помощником.
                         </p>
-                        <div className="mt-8 px-2 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                        <div className="mt-8 px-2 sm:mt-8 sm:flex sm:justify-center lg:justify-start mb-5">
+                        <div className="rounded-md shadow">
+                                <Link
+                                    to="/profTest"
+                                    className="w-full text-center flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-700 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 mt-3"
+                                >
+                                    Тест: Какая профессия тебе подходит
+                                </Link>
+                            </div>
                             <div className="rounded-md shadow">
                                 <Link
                                     to="/main"

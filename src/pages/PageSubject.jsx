@@ -6,6 +6,23 @@ import images from '../img/images2.jpg'
 const PageSubject = () => {
     const state = useSelector(state => state)
 
+    let subjects;
+    if (+state.subject.class <= 5) {
+        subjects = <NavLink to="/tests" className="p-5 rounded-lg border-4 border-sky-200 border-double mt-3">
+            <span className="font-mono text-center text-xl font-medium text-purple-900">Онлайн-тесты</span>
+        </NavLink>
+    }
+    if (+state.subject.class > 5) {
+        subjects = <>
+            <NavLink to="/shortCource" className="p-5 rounded-lg border-4 border-sky-200 border-double mt-3">
+                <span className="font-mono text-center text-xl font-medium text-purple-900">Краткий курс</span>
+            </NavLink>
+            <NavLink to="/tests" className="p-5 rounded-lg border-4 border-sky-200 border-double mt-3">
+                <span className="font-mono text-center text-xl font-medium text-purple-900">Онлайн-тесты</span>
+            </NavLink>
+        </>
+    }
+
     return (
         <div className="container">
             <div>
@@ -17,15 +34,7 @@ const PageSubject = () => {
                 </div>
             </div>
             <div className="flex flex-col justify-center mt-10 p-5 md:px-40">
-                <NavLink to="/shortCource" className="p-5 rounded-lg border-4 border-sky-200 border-double mt-3">
-                    <span className="font-mono text-center text-xl font-medium text-purple-900">Краткий курс</span>
-                </NavLink>
-                <NavLink to="" className="p-5 rounded-lg border-4 border-sky-200 border-double mt-3">
-                    <span className="font-mono text-center text-xl font-medium text-purple-900">Шпаргалки по темам</span>
-                </NavLink>
-                <NavLink to="/tests" className="p-5 rounded-lg border-4 border-sky-200 border-double mt-3">
-                    <span className="font-mono text-center text-xl font-medium text-purple-900">Онлайн-тесты</span>
-                </NavLink>
+                {subjects}
             </div>
         </div>
     )
